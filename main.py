@@ -1,6 +1,6 @@
 '''
 @Author: Mr.Sen
-@LastEditTime: 2020-05-12 11:36:50
+@LastEditTime: 2020-05-13 11:28:21
 @Website: 
 @Mr.Sen All rights reserved
 '''
@@ -25,7 +25,8 @@ def main():
         doc=Document(os.getcwd()+"\\bg\\"+str(i)+'.docx')
         table=doc.tables[0]
         table.cell(1,4).text=cd.get(i)
-        table.cell(1,6).text=py[str(random.randint(1,3))]
+        # table.cell(1,6).text=py[str(random.randint(1,3))]
+        table.cell(1,6).text=random.choice(list(py.values()))
         run=table.cell(1,0).paragraphs[0].add_run()
         run.add_picture(os.getcwd()+"\\pic\\"+str(i)+'.png',width=Inches(4.0),height=Inches(2.5))
         doc.paragraphs[10].add_run("%s" % i).font.size=Pt(20)
