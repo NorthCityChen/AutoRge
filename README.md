@@ -82,9 +82,10 @@
 ### 使用步骤：
 
 参考上文：
-
-1. 点击 star 按键
 ![](https://picstay.oss-cn-chengdu.aliyuncs.com/img/20200518135938.png)
+![](https://picstay.oss-cn-chengdu.aliyuncs.com/img/20200518140229.png)
+1. 点击 star 按键
+2. 下载release.zip 文件并解压
 2. 修改mb.docx 文件
 3. 修改zjie.json 文件
 4. 点击main.exe 开始运行
