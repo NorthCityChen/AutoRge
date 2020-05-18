@@ -91,5 +91,5 @@
 4. 点击main.exe 开始运行
 5. 程序运行结束后，生成的实验报告在bg文件夹下
 
-
+备用下载链接：https://pan.grimoire.cn/#/s/QgCk
 
