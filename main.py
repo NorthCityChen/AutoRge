@@ -1,6 +1,6 @@
 '''
 @Author: Mr.Sen
-@LastEditTime: 2020-05-13 11:28:21
+@LastEditTime: 2020-05-19 20:23:06
 @Website: 
 @Mr.Sen All rights reserved
 '''
@@ -10,8 +10,10 @@ import code_pic
 import random
 import json
 import os,shutil
+import init
 
 def main():
+    init.init()
     cd=code_pic.main()
     # cd={'5812':'woca'}
     with open(os.getcwd()+'/settings/codesave.json','w') as f:
