@@ -1,6 +1,6 @@
 '''
 @Author: Mr.Sen
-@LastEditTime: 2020-05-19 20:23:06
+@LastEditTime: 2020-05-19 23:23:40
 @Website: 
 @Mr.Sen All rights reserved
 '''
@@ -20,7 +20,12 @@ def main():
         json.dump(cd,f)
         # cd=json.load(f)
     with open(os.getcwd()+'/settings/zjie.json','r',encoding='utf-8') as f2:
-        py=json.load(f2)
+        # print(type(f2))
+        content=f2.read()
+        if content.startswith(u'\ufeff'):
+            content=content.encode('utf8')[3:].decode('utf8')
+        py=json.loads(content)
+        # py=eval(content)
     for i in cd:
         shutil.copyfile('mb.docx',os.getcwd()+"\\bg\\"+str(i)+'.docx')
     for i in cd:
