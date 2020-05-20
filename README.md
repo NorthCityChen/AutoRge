@@ -67,7 +67,9 @@
 
 --------------------------
 **另：这里提供一份打包好的版本，可以直接运行在windows系统上**
+
 操作方式和上述版本类似，但是省去了所有的python环境配置和依赖配置，可以直接开始从修改模板开始使用
+
 下载地址：https://github.com/NorthCityChen/AutoRge/releases/download/1.0/release.zip
 
 备用下载链接：https://pan.grimoire.cn/#/s/QgCk
